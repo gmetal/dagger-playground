@@ -27,7 +27,7 @@ class Wheels {
 
     @Override
     public String toString() {
-        return "[Wheels with tires: " + tires + "]";
+        return "[Wheels " + hashCode() + " with tires: " + tires + "]";
     }
 }
 
@@ -36,4 +36,8 @@ class Engine {
 }
 
 class Tires {
+
+    @Inject
+    public Tires() {
+    }
 }
